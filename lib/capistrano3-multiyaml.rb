@@ -1,5 +1,6 @@
 require 'fileutils'
 require 'yaml'
+require 'stages'
 
 # Variable interpolation mechanism stolen from Ruby Facets 2.9.3 rather than
 # requiring the whole library
