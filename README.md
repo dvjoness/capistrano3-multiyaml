@@ -8,16 +8,10 @@ For more information about the general idea of multistage deployment, see the [d
 
 ## Installation
 
-1.  Install the **capistrano-multiyaml** gem using RubyGems, Bundler, or your preferred system.
+1.  Install the **capistrano3-multiyaml** gem using RubyGems, Bundler, or your preferred system.
 2.  Modify your `Capfile` or `deploy.rb` to set a few variables and include the gem:
 
-        set :stages, %w(integration staging production)
-        set :default_stage, "staging"
-        set :multiyaml_stages, "config/stages.yaml"`
-        
         require 'capistrano-multiyaml'
-
-    **Note:** `:default_stage` is optional, and `:multiyaml_stages` only needs to be set if you are using a location other than `config/stages.yaml`.
 
 ## Configure Stages
 
@@ -76,7 +70,7 @@ production:
 
 Prefix deploy actions with the name of the stage, i.e. `cap production TASK`.  If you do not set a stage and `default_stage` is set, it will be used instead.
 
-## Inspiration
+## Links
 
-* [Jamis Buck's original](https://github.com/capistrano/capistrano/wiki/2.x-Multistage-Extension)
-* [Lee Hambly's alternative](https://github.com/leehambley/capistrano-yaml-multistage)
+* [Daniel Silverman original gem for Capistrano2](https://github.com/agperson/capistrano-multiyaml)
+
