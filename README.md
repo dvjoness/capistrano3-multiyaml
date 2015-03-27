@@ -14,7 +14,7 @@ For more information about the general idea of multistage deployment, see the [d
 2.  Modify your `Capfile` or `deploy.rb` to set a few variables and include the gem:
 
         set :multiyaml_stages, "config/stages.yml"`
-        require 'capistrano-multiyaml'
+        require 'capistrano3-multiyaml'
 
 ## Configure Stages
 
