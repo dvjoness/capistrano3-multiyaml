@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'capistrano3-multiyaml'
-  s.version     = '1.0.0'
+  s.version     = '1.0.2'
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Oleg Yakovenko"]
   s.email       = 'olegykz@gmail.com'
