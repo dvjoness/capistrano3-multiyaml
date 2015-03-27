@@ -46,15 +46,12 @@ stages.each do |name|
       when "variables"
         contents.each do |key, value|
           value = value.is_a?(String) ? String.interpolate{value.to_s} : value
-          puts "Settings #{key.to_sym} to '#{value}'"
           set(key.to_sym, value)
         end
-
       when "tasks"
         contents.each do |task|
           target = task['target'].to_s
           action = task['action'].to_s
-
           case task['type']
           when "before_callback"
             before(target, action)
@@ -64,7 +61,6 @@ stages.each do |name|
             abort "Wrong callback type - #{task['type']}"
           end
         end
-
       when "roles"
         contents.each do |rolename, hosts|
           hosts.each do |hostname, options|
@@ -77,7 +73,6 @@ stages.each do |name|
             end
           end
         end
-
       else
         puts "Multistage YAML configuration section #{section} ignored by capistrano/multiyaml."
       end
