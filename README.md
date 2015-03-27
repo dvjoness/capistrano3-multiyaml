@@ -1,6 +1,6 @@
 YAML Multistage Extensions for Capistrano
 =========================================
-[![Gem Version](https://badge.fury.io/rb/capistrano-multiyaml.png)](http://badge.fury.io/rb/capistrano-multiyaml)
+[![Gem Version](https://badge.fury.io/rb/capistrano3-multiyaml.svg)](http://badge.fury.io/rb/capistrano3-multiyaml)
 
 This gem is Capistrano 3 adaptation of [capistrano-multiyaml by Daniel Silverman](https://github.com/agperson/capistrano-multiyaml)
 
