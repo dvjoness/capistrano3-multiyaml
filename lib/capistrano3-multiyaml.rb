@@ -36,7 +36,7 @@ stages.each do |name|
     invoke 'load:defaults'
 
     load deploy_config_path
-    load "capistrano/#{fetch(:scm)}.rb"
+    load "capistrano/scm/#{fetch(:scm)}.rb"
 
     I18n.locale = fetch(:locale, :en)
 
